@@ -1,0 +1,36 @@
+Dora, your dog is going to participate in a 'Best Doggo' Competition,
+it crossed all rounds, so it selected for final round,
+In final round, dora have to jump on the given boxes
+Given a list of boxes' positions (in units) in sorted ascending order, determine dora is able to jump to last stone. Initially, 
+dora is on the first stone and assume the first jump must be 1 unit.
+If dora last jump was k units, then its next jump must be either k - 1, k, or k + 1 units. Note that dora can only jump in the forward direction.
+Find whether it can jump to last box.
+
+Sample input:
+0 1 2 3 5 8
+
+Sample Output:
+True
+
+Explanation:
+initially dora will start from 0,
+0 -> 1 (1 unit of jump)
+1 -> 2 (1 unit of jump)
+2 -> 3 (1 unit of jump)
+3 -> 5 (2 unit of jump)
+5 -> 8 (3 unit of jump)
+So the output is True
+
+Sampe input:
+0 1 3 5 9 11
+
+Sample Output:
+False
+
+Explanation:
+initially dora will start from 0,
+0 -> 1 (1 unit of jump)
+1 -> 3 (2 unit of jump)
+3 -> 5 (2 unit of jump)
+5 -> 9 which cannot be jumped because it cannot jump 4 units, it can only jump 3 units (last jump was 2 units, so it can jump 2+1 units=3 units)
+so the output is False.
